@@ -60,7 +60,7 @@ const SingleDocument = () => {
         <div>
           <img
             className="rounded-t-lg p-3 border border-black w-100 image px-6"
-            src={`http://localhost:3000/${sdocument.coverimg}`}
+            src={`https://digilocker.onrender.com/${sdocument.coverimg}`}
             alt="img"
           />
         </div>
