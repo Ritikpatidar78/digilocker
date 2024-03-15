@@ -142,7 +142,6 @@ export const createdoc = createAsyncThunk( "CREATE/DOC" , async(formdata,thunkAP
     try {
         const token = thunkAPI.getState().auth.user.token
         const data = await docservice.createdocservice(formdata,token)
-        console.log(data)
         return data
     } catch (error) {
         const message = error.response.data.message
@@ -154,7 +153,6 @@ export const getalldoc = createAsyncThunk( "GET/DOCS" , async(_,thunkAPI)=> {
     try {
         const token = thunkAPI.getState().auth.user.token
         const data = await docservice.getalldocservice(token)
-        console.log(data)
 
         return data
     } catch (error) {
@@ -167,7 +165,6 @@ export const getsingledoc = createAsyncThunk( "GET/SINGLEDOC" , async(id,thunkAP
     try {
         const token = thunkAPI.getState().auth.user.token
         const data = await docservice.getsingledocservice(id,token)
-        console.log(data)
 
         return data
     } catch (error) {
@@ -181,7 +178,6 @@ export const updatedoc = createAsyncThunk( "UPDATE/DOC" , async(formdata,thunkAP
     try {
         const token = thunkAPI.getState().auth.user.token
         const data = await docservice.updatedocservice(formdata._id, formdata ,token)
-        console.log(data)
 
         return data
     } catch (error) {
@@ -193,7 +189,6 @@ export const deletedoc = createAsyncThunk( "DELETE/DOC" , async(id,thunkAPI)=> {
     try {
         const token = thunkAPI.getState().auth.user.token
         const data = await docservice.deletedocservice(id,token)
-        console.log(data)
 
         return data
     } catch (error) {
