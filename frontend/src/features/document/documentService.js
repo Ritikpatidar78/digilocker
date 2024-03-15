@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = "/api/document"
+const API_URL = "https://digilocker.onrender.com/api/document"
 
 const createdocservice = async(formdata,token) => {
     const response = await axios.post(API_URL, formdata,{

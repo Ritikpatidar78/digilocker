@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "/api/auth"
+const API_URL = "https://digilocker.onrender.com/api/auth"
 
 const loginservice = async (formdata)=>{
         const response = await axios.post(API_URL + "/login", formdata)
