@@ -51,8 +51,8 @@ const SingleDocument = () => {
 
   return (
     <div className="container-fluid p-5">
-      <h1 className="text-secondary text-center">Your Document Details</h1>
       <Backbutton location={"/alldocument"} />
+      <h1 className="text-secondary text-center">Your Document Details</h1>
       <div className="card p-3 my-3">
         <h1 className="card-title">Title : {sdocument.title} </h1>
         <h3>Description : {sdocument.description}</h3>

@@ -8,10 +8,12 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
-    <nav className="navbar bg-body-tertiary shadow-lg">
+    <nav className="navbar bg-dark shadow-lg">
       <div className="container-fluid">
         <Link to={"/"}>
-          <span className="navbar-brand mb-0 h1">Digi-Locker</span>
+          <span className="navbar-brand Link text-danger mb-0 h1 fw-bold text-uppercase ">
+            Digi-Locker
+          </span>
         </Link>
         <span>
           {!user ? (

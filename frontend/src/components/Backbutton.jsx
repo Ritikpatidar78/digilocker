@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Backbutton = ({ location }) => {
   return (
-    <Link className="btn btn-dark m-1" to={location}>
+    <Link className="btn btn-outline-dark m-1" to={location}>
       Back
     </Link>
   );

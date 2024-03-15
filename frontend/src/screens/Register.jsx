@@ -62,7 +62,7 @@ const Register = () => {
       <div className="card p-3 my-3">
         <form className="my-3" onSubmit={handlesubmit}>
           <input
-            placeholder="Enter Name"
+            placeholder="Name"
             type="text"
             name="name"
             value={name}
@@ -71,7 +71,7 @@ const Register = () => {
             required
           />
           <input
-            placeholder="Enter No."
+            placeholder="Phone No."
             type="number"
             name="number"
             value={number}
@@ -80,7 +80,7 @@ const Register = () => {
             required
           />
           <input
-            placeholder="Enter Email"
+            placeholder="Email"
             type="email"
             name="email"
             value={email}
@@ -89,7 +89,7 @@ const Register = () => {
             required
           />
           <input
-            placeholder="Enter Password"
+            placeholder="Password"
             type="password"
             name="password"
             value={password}

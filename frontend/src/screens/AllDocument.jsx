@@ -40,8 +40,8 @@ const AllDocument = () => {
 
   return (
     <div className="container-fluid p-5">
-      <h1 className="text-secondary text-center">All Documents</h1>
       <Backbutton location={"/"} />
+      <h1 className="text-secondary text-center">All Documents</h1>
 
       <div className="card p-3">
         <table className="table">

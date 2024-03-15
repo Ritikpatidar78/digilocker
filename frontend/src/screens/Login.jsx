@@ -47,7 +47,7 @@ const Login = () => {
       <div className="card p-3 my-3">
         <form className="my-3" onSubmit={handlesubmit}>
           <input
-            placeholder="Enter Email"
+            placeholder="Email"
             type="email"
             name="email"
             value={email}
@@ -56,7 +56,7 @@ const Login = () => {
             required
           />
           <input
-            placeholder="Enter Password"
+            placeholder="Password"
             type="password"
             name="password"
             value={password}

@@ -91,11 +91,11 @@ const Adddocument = () => {
   if (isLoading) {
     return (
       <div className="container-fluid p-5">
+        <Backbutton location={"/"} />
         <h1 className="text-center text-secondary">
           Add New Documents To the Locker
         </h1>
-        <Backbutton location={"/"} />
-        <div className="card p-3">
+        <div className="card shadow-lg p-3">
           <h3 className="text-center">Please Fill All Details</h3>
           <form className="my-3">
             <input
@@ -138,8 +138,8 @@ const Adddocument = () => {
   if (edit.isedit) {
     return (
       <div className="container-fluid p-5">
-        <h1 className="text-center text-secondary">Edit Your Document</h1>
         <Backbutton location={"/"} />
+        <h1 className="text-center text-secondary">Edit Your Document</h1>
         <div className="card p-3">
           <h3 className="text-center">Edit your Details</h3>
           <form className="my-3" onSubmit={handleedit}>
@@ -182,10 +182,10 @@ const Adddocument = () => {
 
   return (
     <div className="container-fluid p-5">
+      <Backbutton location={"/"} />
       <h1 className="text-center text-secondary">
         Add New Documents To the Locker
       </h1>
-      <Backbutton location={"/"} />
       <div className="card p-3">
         <h3 className="text-center">Please Fill All Details</h3>
         <form className="my-3" onSubmit={handlesubmit}>
